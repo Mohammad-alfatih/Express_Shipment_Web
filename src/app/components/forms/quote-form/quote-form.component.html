@@ -1,0 +1,72 @@
+<h2>Ask for a free quote!</h2>
+
+<form>
+  <div class="row">
+    <div id="div_error" style="display:block;color:#4e4e4e; padding-left:6%; font-weight:bold;" class="err"><b></b></div>
+
+    <div class="form-group col-md-12">
+      <!--<label for="exampleTextarea">Where will you be moving from?</label>-->
+      <input class="form-control" type="text" name="from" id="from" placeholder="Moving From" required onfocus="hideScheduleEstimateOriginZipError();">
+      <div id="map-canvas" style="display: none; z-index: 999999;"></div>
+    </div>
+
+    <div class="form-group col-md-12">
+      <!--<label for="exampleTextarea">Where will you be moving to?</label>-->
+      <input class="form-control" type="text" name="to" id="to" placeholder="Moving To" required onfocus="hideScheduleEstimateOriginZipError();">
+      <div id="map-canvas1" style="display: none; z-index: 999999;"></div>
+    </div>
+
+    <div class="form-group col-md-6">
+      <select class="form-control" id="exampleSelect1">
+        <option dir="ltr" value="">Move Size</option>
+        <option dir="ltr" value="1">Studio</option>
+        <option dir="ltr" value="2">1 Bedroom</option>
+        <option dir="ltr" value="5">2 Bedrooms</option>
+        <option dir="ltr" value="8">3 Bedrooms</option>
+        <option dir="ltr" value="10">4 Bedrooms</option>
+        <option dir="ltr" value="11">4+ Bedrooms</option>
+        <option dir="ltr" value="3">Small Office</option>
+        <option dir="ltr" value="6">Medium Office</option>
+        <option dir="ltr" value="12">Large Office</option>
+        <option dir="ltr" value="4">Small storage (5x5, 5x8, 5x10)</option>
+        <option dir="ltr" value="7">Medium storage (10x10, 10x15)</option>
+        <option dir="ltr" value="9">Large storage (10x20)</option>
+      </select>
+    </div>
+
+    <div class="form-group col-md-6">
+      <input class="form-control" type="text" name="date_of_move" id="date" placeholder="Moving Date" required>
+    </div>
+    
+    <div class="form-group col-md-6">
+      <input class="form-control" type="text" name="first_name" placeholder="First Name" required>
+    </div>
+
+    <div class="form-group col-md-6">
+      <input class="form-control" type="text" name="last_name" placeholder="Last Name" required>
+    </div>
+    
+    <div class="form-group col-md-12">
+      <input class="form-control" type="text" name="phone" id="phone" placeholder="Phone">
+    </div>
+
+    <div class="form-group col-md-12">
+      <input class="form-control" type="text" name="email" id="email" placeholder="Email">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="exampleInputFile">Coupon Upload</label>
+      <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+      <small id="fileHelp" class="form-text text-muted">If you have any paper coupons, you can upload a pic of them using this input.</small>
+    </div>
+
+    <div class="form-check form-group col-md-12">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input">
+        Check me out
+      </label>
+    </div>
+  
+    <button type="submit" class="btn btn-primary float-right">Submit</button>
+  </div>
+</form>
